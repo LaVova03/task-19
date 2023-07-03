@@ -16,7 +16,7 @@ input {
 #post {
     position: relative;
     left: -10px;
-    height: 200px;
+    height: 250px;
     width: 300px;
     border: 2px solid black;
     top: 150px;
@@ -31,7 +31,7 @@ input {
     height: 30px;
     display: none;
     left: 510px;
-    top: 380px;
+    top: 440px;
 }
 
 #hide {
@@ -40,7 +40,7 @@ input {
     height: 30px;
     display: none;
     left: 660px;
-    top: 380px;
+    top: 440px;
 }
 
 #comPost {

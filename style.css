@@ -1,0 +1,79 @@
+body {
+    padding: 20px;
+}
+
+input {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    top: 100px;
+    width: 400px;
+    height: 30px;
+    margin: 0 0 0 400px;
+    border: 2px solid black;
+}
+
+#post {
+    position: relative;
+    left: -10px;
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    top: 150px;
+    margin: 0 0 0 450px;
+    display: none;
+    padding: 15px;
+}
+
+#comments {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    display: none;
+    left: 510px;
+    top: 380px;
+}
+
+#hide {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    display: none;
+    left: 660px;
+    top: 380px;
+}
+
+#comPost {
+    position: relative;
+    display: none;
+    top: 180px;
+    display: none;
+}
+
+#comPost1 {
+    position: relative;
+    display: none;
+    top: 190px;
+    display: none;
+}
+
+#comPost2 {
+    position: relative;
+    display: none;
+    top: 200px;
+    display: none;
+}
+
+#comPost3 {
+    position: relative;
+    display: none;
+    top: 210px;
+    display: none;
+}
+
+#comPost4 {
+    position: relative;
+    display: none;
+    top: 220px;
+    display: none;
+}

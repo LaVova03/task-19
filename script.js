@@ -16,7 +16,7 @@ search.addEventListener('change', (event) => {
         alert('This id does not exist');
         document.getElementById('search').value = '';
     } else {
-        let promise = fetch(`https://jsonplaceholder.typicode.com/posts/${valueInput}`)
+        fetch(`https://jsonplaceholder.typicode.com/posts/${valueInput}`)
             .then(response => response.json())
             .then(json => {
                 post.style.display = 'block';
@@ -24,7 +24,7 @@ search.addEventListener('change', (event) => {
 
                 while (post.firstChild) {
                     post.firstChild.remove();
-                }
+                };
 
                 for (const key in json) {
                     const field = document.createElement('p');
@@ -34,7 +34,7 @@ search.addEventListener('change', (event) => {
                     field.appendChild(strongKey);
                     field.appendChild(document.createTextNode(`: ${json[key]}`));
                     post.appendChild(field);
-                }
+                };
 
                 hide.style.display = 'block';
 
@@ -71,10 +71,10 @@ search.addEventListener('change', (event) => {
                         comPost4.innerHTML = (`id: ${json[4].id}<br>name: ${json[4].name}<br>email: ${json[4].email}<br>body: ${json[4].body}`);
                     } catch (error) {
                         console.error('Случилась ошибка при парсинге JSON:', error);
-                    }
+                    };
                     return json;
                 })
                 .catch(error => console.log(error));
         });
-    }
+    };
 });

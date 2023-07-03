@@ -64,7 +64,7 @@ search.addEventListener('change', (event) => {
                     comPost4.style.display = 'block';
                 } catch (error) {
                     console.error('Случилась ошибка при парсинге JSON:', error);
-                }
+                };
             });
     });
 });

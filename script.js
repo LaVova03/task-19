@@ -58,6 +58,7 @@ search.addEventListener('change', (event) => {
                                 const br = document.createElement('br');
                                 messages.append(letter);
                                 letter.textContent = (`${key}: ${value}`);
+                                
                                 if (`${key}` === 'body') {
                                     messages.append(br);
                                 };
@@ -73,7 +74,7 @@ search.addEventListener('change', (event) => {
                         });
                     };
                 })
-                .catch(error => console.log(error));
+                .catch(error => console.log(error))
         });
     };
 });
